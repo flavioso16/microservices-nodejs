@@ -1,0 +1,4 @@
+cinema-microservice/api-gateway/node_modules
+cinema-microservice/cinema-catalog-service/src/node_modules
+cinema-microservice/movies-service/src/node_modules
+.vscode

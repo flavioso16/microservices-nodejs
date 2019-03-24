@@ -1,0 +1,4046 @@
+﻿Node.js e Microservices
+________________
+
+
+Código 1
+________________
+
+node -v
+________________
+
+
+
+
+Código 2
+________________
+
+
+node
+________________
+
+
+
+
+Código 3
+________________
+
+
+var x=0
+console.log(x)
+________________
+
+
+
+
+Código 4
+________________
+
+
+console.log(x+1)
+________________
+
+
+
+
+Código 5
+________________
+
+
+console.log('Olá mundo!')
+________________
+
+
+
+
+Código 6
+________________
+
+
+node /documents/index.js
+________________
+
+
+
+
+Código 7
+________________
+
+
+console.log('Hello World')
+________________
+
+
+
+
+Código 8
+________________
+
+
+var x = 1
+________________
+
+
+
+
+Código 9
+________________
+
+
+x = 'teste'
+________________
+
+
+
+
+Código 10
+________________
+
+
+let x, y, z
+________________
+
+
+
+
+Código 11
+________________
+
+
+let x = 1
+________________
+
+
+
+
+Código 12
+________________
+
+
+// comentário de uma linha
+// tudo após as duas barras é considerado comentário
+________________
+
+
+
+
+
+
+Código 13
+________________
+
+
+/* comentário
+ de múltiplas linhas */
+________________
+
+
+
+
+Código 14
+________________
+
+
+// Declaracao e inicializacao de duas variaveis, troque os valores se quiser
+let a = 5
+let b = 2
+// Varios exemplos de operacoes sobre variaveis
+console.log('a = ' + a)
+console.log('b = ' + b)
+console.log('a + b = ' + (a + b))
+console.log('a - b = ' + (a - b))
+console.log('a * b = ' + (a * b))
+console.log('a / b = ' + (a / b))
+console.log('a % b = ' + (a % b))
+console.log('a++ = ' + (a++))
+console.log('--b = ' + (--b))
+console.log('a = ' + a)
+console.log('b = ' + b)
+________________
+
+
+
+
+Código 15
+________________
+
+
+let a = 15
+let b = 12
+let c = '15'
+console.log('a = ' + a)
+console.log('b = ' + b)
+// aqui a igualdade é apenas sobre o valor, mas são valores diferentes
+console.log('a == b : ' + (a == b))
+// aqui, o interpretador acha que são iguais, pois o valor é o mesmo, mas com tipos diferentes
+console.log('a == c : ' + (a == c))
+// agora sim, valida-se o tipo primeiro e depois o valor
+console.log('a === c : ' + (a === c))
+// ou seja, use sempre === e !==
+console.log('a !== b : ' + (a !== b))
+console.log('a < b : ' + (a < b))
+console.log('a > b : ' + (a > b))
+console.log('a <= b : ' + (a <= b))
+console.log('a >= b : ' + (a >= b))
+________________
+
+
+
+
+Código 16
+________________
+
+
+var result = false
+i = 0
+y = a*x + b
+________________
+
+
+
+
+Código 17
+________________
+
+
+const i = 0
+let y = i + 2
+console.log('Valor do i: ' + i)
+________________
+
+
+
+
+Código 18
+________________
+
+
+function soma(num1, num2){ return num1 + num2 }
+________________
+
+
+
+
+Código 19
+________________
+
+
+var somar = function(num1, num2) { return num1 + num2 }
+________________
+
+
+
+
+
+
+Código 20
+________________
+
+
+somar(1,2)
+________________
+
+
+
+
+
+
+Código 21
+________________
+
+
+outraFuncao(somar)
+________________
+
+
+
+
+
+
+Código 22
+________________
+
+
+var somar = (num1,num2) => num1 + num2
+________________
+
+
+
+
+Código 23
+________________
+
+
+const nome = 'Luiz'
+________________
+
+
+
+
+Código 24
+________________
+
+
+const nome = 'Luiz'
+const sobrenome = 'Duarte'
+console.log('Prof. ' + nome + sobrenome)
+________________
+
+
+
+
+Código 25
+________________
+
+
+const nome = 'Luiz'
+const idade = 28
+console.log('Prof. ' + nome + ' tem ' + idade + ' anos!')
+________________
+
+
+
+
+Código 26
+________________
+
+
+let str = 'Teste'
+console.log(str.length)
+console.log(str.toUpperCase())
+console.log(str.toLowerCase())
+str = '1'
+console.log(parseInt(str))
+str = '1.5'
+console.log(parseFloat(str))
+________________
+
+
+
+
+Código 27
+________________
+
+
+for (var i=0; i < 10; i++)
+  console.log('i=' + i)
+________________
+
+
+Código 28
+________________
+
+
+for (var i=0; i < 10; i++){
+        console.log(“i=” + i)
+        //outra instrução qualquer, quantas quiser
+}
+________________
+
+
+Código 29
+________________
+
+
+let chave = true
+while(chave === true)
+  chave = false
+________________
+
+
+
+
+Código 30
+________________
+
+
+let chave = true
+while(chave === true){
+  //outra instrução qualquer
+  console.log('Imprime!')
+  chave = false
+}
+________________
+
+
+
+
+Código 31
+________________
+
+
+let i = 0
+while(i < 10){
+  //outra instrução qualquer
+  console.log('Imprime!')
+  i++
+}
+________________
+
+
+Código 32
+________________
+
+
+let chave = false;
+do{
+  //outra instrução qualquer
+  console.log('Imprime!')
+}while(chave === true)
+________________
+
+
+
+
+Código 33
+________________
+
+
+let x = 0
+console.log(x++)
+console.log(x++)
+console.log(x++)
+console.log(x++)
+console.log(x++)
+console.log(x++)
+console.log(x++)
+console.log(x++)
+console.log(x++)
+console.log(x++)
+________________
+
+
+
+
+
+
+Código 34
+________________
+
+
+for(var i=0; i < 10; i++)
+  console.log(i)
+________________
+
+
+
+
+Código 35
+________________
+
+
+let x=0;
+while(x < 10)
+  console.log(x++)
+________________
+
+
+
+
+Código 36
+________________
+
+
+let x=0;
+do{
+  console.log(x)
+} while(x++ < 10)
+________________
+
+
+
+
+Código 37
+________________
+
+
+let x=0
+console.log(x++)
+________________
+
+
+
+
+Código 38
+________________
+
+
+let x=0
+console.log(++x)
+________________
+
+
+
+
+Código 39
+________________
+
+
+let x = 0
+if(x === 0)
+  console.log('X é zero!')
+________________
+
+
+
+
+Código 40
+________________
+
+
+let x = 0
+if(x === 0){
+  console.log('X é zero!')
+  x++
+}
+________________
+
+
+
+
+Código 41
+________________
+
+
+let x = 0
+if(x % 2 === 0){
+  console.log('X é PAR!')
+}
+________________
+
+
+
+
+Código 42
+________________
+
+
+for(var i=1; i <= 20; i++){
+  if(i % 2 === 0){
+     console.log(i + ' é PAR!')
+  }
+}
+________________
+
+
+Código 43
+________________
+
+
+for(var i=1; i <= 20; i++){
+  if(i % 2 == 0){
+     console.log(i + ' é PAR!')
+  }
+  console.log(i + ' é ÍMPAR!')
+
+________________
+
+
+Código 44
+________________
+
+
+for(var i=1; i <= 20; i++){
+  if(i % 2 === 0){
+     console.log(i + ' é PAR!')
+  } else {
+     console.log(i + ' é ÍMPAR!')
+  }
+}
+________________
+
+
+
+
+Código 45
+________________
+
+
+for(var i=0; i < 10; i++){
+  if(i >= 5){
+     if(i <= 7){
+        console.log('FUNCIONOU')
+     }
+  }
+}
+________________
+
+
+
+
+Código 46
+________________
+
+
+for(var i=0; i < 10; i++){
+  if(i >= 5 && i <= 7){
+     console.log('FUNCIONOU')
+  }
+}
+________________
+
+
+Código 47
+________________
+
+
+var letra = 'A'
+switch (letra) {
+case 'A': console.log('Vogal A'); break
+case 'E': console.log('Vogal E'); break
+case 'I': console.log('Vogal I'); break
+case 'O': console.log('Vogal O'); break
+case 'U': console.log('Vogal U'); break
+default: console.log('Não é uma vogal')
+}
+________________
+
+
+
+
+Código 48
+________________
+
+
+const numeros = []
+________________
+
+
+
+
+Código 49
+________________
+
+
+numeros[0] = 5
+________________
+
+
+
+
+Código 50
+________________
+
+
+numeros[1] = 3
+________________
+
+
+
+
+
+
+Código 51
+________________
+
+
+numeros[1] = 6
+________________
+
+
+
+
+Código 52
+________________
+
+
+const numeros = []
+numeros[0] = 8
+numeros[1] = 4
+numeros[2] = 29
+________________
+
+
+
+
+Código 53
+________________
+
+
+const inventores= []
+inventores[0] = 'Einstein'
+inventores[1] = 'Edson'
+inventores[2] = 'Galileu'
+inventores[3] = 'Da Vinci'
+________________
+
+
+
+
+Código 54
+________________
+
+
+const inventor = inventores[3]
+console.log(inventor)
+________________
+
+
+
+
+Código 55
+________________
+
+
+const numeros = []
+for(var i=0; i < 10; i++)
+  numeros[i] = 1
+________________
+
+
+
+
+Código 56
+________________
+
+
+const numeros = []
+for(var i=0; i < 10; i++)
+  numeros.push(1)
+________________
+
+
+
+
+Código 57
+________________
+
+
+for(var i=0; i < numeros.length; i++)
+  console.log(numeros[i])
+________________
+
+
+
+
+
+
+Código 58
+________________
+
+
+const cliente = {}
+________________
+
+
+
+
+Código 59
+________________
+
+
+cliente.nome = 'Luiz'
+________________
+
+
+
+
+Código 60
+________________
+
+
+cliente.exibirMensagem = function(msg){ 
+  console.log(msg) 
+}
+________________
+
+
+
+
+Código 61
+________________
+
+
+const cliente = { 
+  nome: 'Luiz', 
+  saldo: 100.0, 
+  idade: 29, 
+  gaucho: true 
+}
+________________
+
+
+
+
+Código 62
+________________
+
+
+const clientes = [cliente1, cliente2, { nome:”cliente3”, saldo:5.0, idade:21, gaúcho:false }]
+________________
+
+
+Código 63
+________________
+
+
+const http = require('http')
+________________
+
+
+Código 64
+________________
+
+
+> require('http').METHODS
+[ 'ACL',
+ 'BIND',
+ 'CHECKOUT',
+ 'CONNECT',
+ 'COPY',
+ 'DELETE',
+ 'GET',
+ 'HEAD',
+ 'LINK',
+ 'LOCK',
+ 'M-SEARCH',
+ 'MERGE',
+ 'MKACTIVITY',
+ 'MKCALENDAR',
+ 'MKCOL',
+ 'MOVE',
+ 'NOTIFY',
+ 'OPTIONS',
+ 'PATCH',
+ 'POST',
+ 'PROPFIND',
+ 'PROPPATCH',
+ 'PURGE',
+ 'PUT',
+ 'REBIND',
+ 'REPORT',
+ 'SEARCH',
+ 'SUBSCRIBE',
+ 'TRACE',
+ 'UNBIND',
+ 'UNLINK',
+ 'UNLOCK',
+ 'UNSUBSCRIBE' ]
+________________
+
+
+Código 65
+________________
+
+
+> require('http').STATUS_CODES
+{ '100': 'Continue',
+ '101': 'Switching Protocols',
+ '102': 'Processing',
+ '200': 'OK',
+ '201': 'Created',
+ '202': 'Accepted',
+ '203': 'Non-Authoritative Information',
+ '204': 'No Content',
+ '205': 'Reset Content',
+ '206': 'Partial Content',
+ '207': 'Multi-Status',
+ '208': 'Already Reported',
+ '226': 'IM Used',
+ '300': 'Multiple Choices',
+ '301': 'Moved Permanently',
+ '302': 'Found',
+ '303': 'See Other',
+ '304': 'Not Modified',
+ '305': 'Use Proxy',
+ '307': 'Temporary Redirect',
+ '308': 'Permanent Redirect',
+ '400': 'Bad Request',
+ '401': 'Unauthorized',
+ '402': 'Payment Required',
+ '403': 'Forbidden',
+ '404': 'Not Found',
+ '405': 'Method Not Allowed',
+ '406': 'Not Acceptable',
+ '407': 'Proxy Authentication Required',
+ '408': 'Request Timeout',
+ '409': 'Conflict',
+ '410': 'Gone',
+ '411': 'Length Required',
+ '412': 'Precondition Failed',
+ '413': 'Payload Too Large',
+ '414': 'URI Too Long',
+ '415': 'Unsupported Media Type',
+ '416': 'Range Not Satisfiable',
+ '417': 'Expectation Failed',
+ '418': 'I\'m a teapot',
+ '421': 'Misdirected Request',
+ '422': 'Unprocessable Entity',
+ '423': 'Locked',
+ '424': 'Failed Dependency',
+ '425': 'Unordered Collection',
+ '426': 'Upgrade Required',
+ '428': 'Precondition Required',
+ '429': 'Too Many Requests',
+ '431': 'Request Header Fields Too Large',
+ '451': 'Unavailable For Legal Reasons',
+ '500': 'Internal Server Error',
+ '501': 'Not Implemented',
+ '502': 'Bad Gateway',
+ '503': 'Service Unavailable',
+ '504': 'Gateway Timeout',
+ '505': 'HTTP Version Not Supported',
+ '506': 'Variant Also Negotiates',
+ '507': 'Insufficient Storage',
+ '508': 'Loop Detected',
+ '509': 'Bandwidth Limit Exceeded',
+ '510': 'Not Extended',
+ '511': 'Network Authentication Required' }
+________________
+
+
+Código 66
+________________
+
+
+const server = http.createServer((req, res) => {
+ //cada requisição recebida dispara este callback
+})
+________________
+
+
+Código 67
+________________
+
+
+const server = http.createServer((req, res) => {
+ //res é um objeto http.ServerResponse
+})
+________________
+
+
+
+
+Código 68
+________________
+
+
+response.statusCode = 500
+response.statusMessage = 'Internal Server Error'
+________________
+
+
+
+
+Código 69
+________________
+
+
+const http = require('http')
+const port = 3000
+const server = http.createServer((req, res) => {
+ res.statusCode = 200
+ res.setHeader('Content-Type', 'text/plain')
+ res.end('Olá Mundo!\n')
+})
+server.listen(port, () => {
+ console.log(`Servidor iniciou em http://localhost:${port}/`)
+})
+________________
+
+
+
+
+Código 70
+________________
+
+
+C:\Users\luiztools\documents> node servidor.js
+________________
+
+
+
+
+Código 71
+________________
+
+
+const https = require('https')
+const options = {
+ hostname: 'www.google.com.br',
+ port: 443,
+ path: '/about/',
+ method: 'GET'
+}
+const req = https.request(options, (res) => {
+ console.log(`statusCode: ${res.statusCode}`)
+ res.on('data', (d) => {
+   process.stdout.write(d)
+ })
+})
+req.on('error', (error) => {
+ console.error(error)
+})
+req.end()
+________________
+
+
+
+
+Código 72
+________________
+
+
+const https = require('https')
+const data = JSON.stringify({
+ exemplo: 'valor'
+})
+const options = {
+ hostname: 'requestbin.fullcontact.com',
+ port: 443,
+ path: '/14dbyg71',
+ method: 'POST',
+ headers: {
+   'Content-Type': 'application/json',
+   'Content-Length': data.length
+ }
+}
+const req = https.request(options, (res) => {
+ console.log(`statusCode: ${res.statusCode}`)
+ res.on('data', (d) => {
+   process.stdout.write(d)
+ })
+})
+req.on('error', (error) => {
+ console.error(error)
+})
+req.write(data)
+req.end()
+________________
+
+
+
+
+Código 73
+________________
+
+
+C:\node> npm install -g express-generator
+________________
+
+
+
+
+Código 74
+________________
+
+
+C:\node>express -e --git workshop
+________________
+
+
+
+
+Código 75
+________________
+
+
+cd workshop
+npm install
+________________
+
+
+
+
+Código 76
+________________
+
+
+> npm start
+________________
+
+
+
+
+Código 77
+________________
+
+
+var app = require('../app');
+var debug = require('debug')('workshop:server');
+var http = require('http');
+
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+var server = http.createServer(app);
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+________________
+
+
+
+
+Código 78
+________________
+
+
+var express = require('express');
+var path = require('path');
+var favicon = require('serve-favicon');
+var logger = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+
+var index = require('./routes/index');
+var users = require('./routes/users');
+________________
+
+
+
+
+Código 79
+________________
+
+
+var app = express();
+________________
+
+
+
+
+Código 80
+________________
+
+
+// view engine setup
+app.engine('html', require('ejs').renderFile);
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+
+// uncomment after placing your favicon in /public
+//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/', index);
+app.use('/users', users);
+________________
+
+
+
+
+Código 81
+________________
+
+
+module.exports = app;
+________________
+
+
+
+
+Código 82
+________________
+
+
+// códigos…
+var index = require('./routes/index');
+var users = require('./routes/users');
+
+// mais códigos...
+
+app.use('/', index);
+app.use('/users', users);
+________________
+
+
+
+
+Código 83
+________________
+
+
+var express = require('express');
+var router = express.Router();
+
+router.get('/', function(req, res, next) {
+ res.render('index', { title: 'Express' });
+});
+
+module.exports = router;
+________________
+
+
+
+
+
+
+Código 84
+________________
+
+
+res.render('index', { title: 'Express' });
+________________
+
+
+
+
+Código 85
+________________
+
+
+// view engine setup
+app.engine('html', require('ejs').renderFile);
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+________________
+
+
+
+
+Código 86
+________________
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+   <title><%= title %></title>
+   <link rel='stylesheet' href='/stylesheets/style.css' />
+ </head>
+ <body>
+   <h1><%= title %></h1>
+   <p>Welcome to <%= title %></p>
+ </body>
+</html>
+________________
+
+
+
+
+Código 87
+________________
+
+
+res.render('index', { title: 'Express' });
+________________
+
+
+
+
+Código 88
+________________
+
+
+var express = require('express');
+var router = express.Router();
+
+router.get('/', function(req, res, next) {
+ res.render('new', { title: 'Novo Cadastro' });
+});
+
+module.exports = router;
+________________
+
+
+Código 89
+________________
+
+
+var new = require('./routes/new);
+app.use('/new', new);
+________________
+
+
+Código 90
+________________
+
+
+//coloque todo o conteúdo abaixo dentro de um arquivo index.js
+//rode o comando "npm init" na mesma pasta do index.js e apenas aperte Enter para tudo
+//rode os comandos "npm install -S express fs" para instalar as dependências
+//use o comando "node index" na pasta do index.js para iniciar esse programa
+const express = require('express')  
+const fs = require('fs')  //fs é o módulo file-system, para ler arquivos
+const app = express()
+
+app.get('/', processRequest)
+
+function processRequest (request, response) {  
+ readText(request, response)
+ console.log('requisição terminou')
+}
+
+function readText (request, response) {  
+ //salve um arquivo teste.txt junto a esse arquivo com qualquer coisa dentro
+ fs.readFile('teste.txt', function(err, data) {
+   if (err) {
+       console.log('erro na leitura')
+       return response.status(500).send('Erro ao ler o arquivo.')
+     }
+   response.write(data)
+   response.end();
+   console.log('leu arquivo')
+ });
+
+ console.log('Lendo o arquivo, aguarde.')
+}
+
+app.listen(3000)
+________________
+
+
+
+
+Código 91
+________________
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Programação para Internet</title>
+        <meta charset="utf-8" />
+  </head>
+<body>
+        <% var teste = 0; %>
+        <p>Apenas um texto</p>
+        <%= teste %>
+</body>
+</html>
+________________
+
+
+
+
+Código 92
+________________
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Programação para Internet</title>
+        <meta charset="utf-8" />
+  </head>
+<body>
+        <% if(exibirDiv) { %>
+          <div>Apenas uma div</div>
+        <% } else { %>
+          <div>Apenas outra div</div>
+        <% } %>
+</body>
+</html>
+________________
+
+
+
+
+Código 93
+________________
+
+
+router.get('/', function(req, res, next){
+  res.render('index', { exibirDiv: true });//ou false, você escolhe
+})
+________________
+
+
+
+
+Código 94
+________________
+
+
+express-generator -e --git crud
+________________
+
+
+
+
+Código 95
+________________
+
+
+cd crud
+npm install
+________________
+
+
+
+
+Código 96
+________________
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>CRUD de Clientes</title>
+   <link rel='stylesheet' href='/stylesheets/style.css' />
+   <meta charset="utf-8" />
+ </head>
+ <body>
+   <h1>Listagem de Clientes</h1>
+   <p>Clientes já cadastrados no sistema.</p>
+   <table style="width:50%">
+     <thead>
+       <tr style="background-color: #CCC">
+         <td style="width:50%">Nome</td>
+         <td style="width:15%">Idade</td>
+         <td style="width:15%">UF</td>
+         <td>Ações</td>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td colspan="4">Nenhum cliente cadastrado.</td>
+       </tr>
+     </tbody>
+     <tfoot>
+       <tr>
+         <td colspan="4">
+           <a href="/new">Cadastrar Novo</a>
+         </td>
+       </tr>
+     </tfoot>
+   </table>
+ </body>
+</html>
+________________
+
+
+
+
+Código 97
+________________
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>CRUD de Clientes</title>
+   <link rel='stylesheet' href='/stylesheets/style.css' />
+   <meta charset="utf-8" />
+ </head>
+ <body>
+   <h1><%= title %></h1>
+   <p>Preencha os dados abaixo para salvar o cliente.</p>
+   <form action="<%= action %>" method="POST">
+       <p>
+           <label>Nome: <input type="text" name="nome" /></label>
+       </p>
+       <p>
+           <label>Idade: <input type="number" name="idade" /></label>
+       </p>
+       <p>
+           <label>UF: <select name="uf">
+                   <option>RS</option>
+                   <option>SC</option>
+                   <option>PR</option>
+                   <!-- coloque os estados que quiser -->
+               </select></label>
+       </p>
+       <p>
+           <a href="/">Cancelar</a> | <input type="submit" value="Salvar" />
+       </p>
+   </form>
+ </body>
+</html>
+________________
+
+
+
+
+Código 98
+________________
+
+
+/* GET new page. */
+router.get('/new', function(req, res, next) {
+ res.render('new', { title: "Cadastro de Cliente", action: "/new" })
+})
+________________
+
+
+
+
+Código 99
+________________
+
+
+/* POST new page. */
+router.post('/new', function(req, res, next) {
+ //futuramente vamos salvar o cliente aqui
+ res.redirect('/?new=true')
+})
+________________
+
+
+
+
+Código 100
+________________
+
+
+npm start
+________________
+
+
+
+
+Código 101
+________________
+
+
+C:\mongo\bin> mongod --dbpath C:\mongo\data
+________________
+
+
+
+
+Código 102
+________________
+
+
+c:\mongo\bin> mongo
+________________
+
+
+
+
+
+
+Código 103
+________________
+
+
+show databases
+________________
+
+
+
+
+Código 104
+________________
+
+
+> use workshop
+________________
+
+
+
+
+Código 105
+________________
+
+
+> show collections
+________________
+
+
+
+
+Código 106
+________________
+
+
+> db.customers.find()
+________________
+
+
+
+
+Código 107
+________________
+
+
+> db.customers.insert({ nome: "Luiz", idade: 29 })
+________________
+
+
+
+
+Código 108
+________________
+
+
+> custArray = [{ nome : "Fernando", idade : 29 }, { nome : "Teste", "uf" : "RS" }]
+> db.customers.insert(custArray)
+
+________________
+
+
+Código 109
+________________
+
+
+> db.customers.find().pretty()
+________________
+
+
+
+
+Código 110
+________________
+
+
+> db.customers.find({uf: "RS"})
+________________
+
+
+
+
+Código 111
+________________
+
+
+> db.customers.find({nome: { $regex: /a/ }})
+________________
+
+
+
+
+Código 112
+________________
+
+
+> db.customers.find({idade: {$gte: 18}})
+________________
+
+
+
+
+
+
+Código 113
+________________
+
+
+> db.customers.find({nome: "Luiz", idade: {$gte: 18}})
+________________
+
+
+
+
+Código 114
+________________
+
+
+> db.customers.find({nome: { $regex: /a/ }, idade: {$gte: 18}})
+________________
+
+
+
+
+Código 115
+________________
+
+
+> db.customers.find().skip(1).limit(10)
+________________
+
+
+Código 116
+________________
+
+
+> db.customers.find().sort({idade: 1})
+________________
+
+
+Código 117
+________________
+
+
+> db.customers.update({nome: "Luiz"}, {nome: "Luiz", idade: 29, uf: "RS"})
+________________
+
+
+
+
+Código 118
+________________
+
+
+> db.customers.updateOne({_id: ObjectId("59ab46e433959e2724be2cbd")}, {$set: {idade: 28}})
+________________
+
+
+
+
+Código 119
+________________
+
+
+> db.customers.updateOne({nome: "LuizTools"}, {nome: "LuizTools", uf: "RS"}, {upsert: true})
+________________
+
+
+
+
+Código 120
+________________
+
+
+> db.customers.delete({nome: "Luiz"})
+________________
+
+
+
+
+Código 121
+________________
+
+
+npm install mongodb
+________________
+
+
+
+
+
+
+Código 122
+________________
+
+
+const mongoClient = require("mongodb").MongoClient
+mongoClient.connect("mongodb://localhost:27017/workshop")
+           .then(conn => global.conn = conn.db("workshop"))
+           .catch(err => console.log(err))
+
+module.exports = { }
+
+________________
+Código 123
+________________
+
+
+conn => global.conn = conn.db("workshop")
+________________
+
+
+
+
+Código 124
+________________
+
+
+global.db = require('../db')
+________________
+
+
+
+
+Código 125
+________________
+
+
+function findAll(callback){  
+   global.conn.collection("customers").find({}).toArray(callback);
+}
+________________
+
+
+
+
+Código 126
+________________
+
+
+module.exports = { findAll }
+________________
+
+
+
+
+Código 127
+________________
+
+
+/* GET home page. */
+router.get('/', function(req, res) {
+ global.db.findAll((e, docs) => {
+     if(e) { return console.log(e); }
+     res.render('index', { docs });
+ })
+})
+________________
+
+
+
+
+Código 128
+________________
+<% if(!docs || docs.length == 0) { %>
+         <tr>
+           <td colspan="4">Nenhum cliente cadastrado.</td>
+         </tr>
+<% } %>
+________________
+
+
+
+
+Código 129
+________________
+
+
+<% } else { 
+         docs.forEach(function(customer){ %>
+           <tr>
+             <td style="width:50%"><%= customer.nome %></td>
+             <td style="width:15%"><%= customer.idade %></td>
+             <td style="width:15%"><%= customer.uf %></td>
+             <td><!-- em breve --></td>
+           </tr>
+         <% }) 
+}%>
+________________
+
+
+
+
+Código 130
+________________
+
+
+npm start
+________________
+
+
+
+
+Código 131
+________________
+
+
+function insert(customer, callback){
+   global.conn.collection("customers").insert(customer, callback);
+}
+________________
+
+
+
+
+Código 132
+________________
+
+
+module.exports = { findAll, insert }
+________________
+
+
+
+
+Código 133
+________________
+
+
+/* POST new page. */
+router.post('/new', function(req, res, next) {
+ const nome = req.body.nome
+ const idade = parseInt(req.body.idade);
+ const uf = req.body.uf
+ global.db.insert({nome, idade, uf}, (err, result) => {
+         if(err) { return console.log(err) }
+         res.redirect('/?new=true')
+     })
+})
+________________
+
+
+
+
+Código 134
+________________
+
+
+<td><a href="/edit/<%= customer._id %>">Editar</a></td>
+________________
+
+
+
+
+Código 135
+________________
+
+
+const ObjectId = require("mongodb").ObjectId;
+function findOne(id, callback){  
+   global.conn.collection("customers").findOne(new ObjectId(id), callback);
+}
+________________
+
+
+
+
+Código 136
+________________
+
+
+module.exports = { findAll, insert, findOne }
+________________
+
+
+
+
+Código 137
+________________
+
+
+/* GET edit page. */
+router.get('/edit/:id', function(req, res, next) {
+ var id = req.params.id
+ global.db.findOne(id, (e, doc) => {
+     if(e) { return console.log(e) }
+     console.log(doc.nome)
+     res.render('new', { title: 'Edição de Cliente', doc: doc, action: '/edit/' + doc._id })
+   })
+})
+________________
+
+
+
+
+Código 138
+________________
+
+
+/* GET new page. */
+router.get('/new', function(req, res, next) {
+ res.render('new', { title: 'Cadastro de Cliente', doc: {} })
+})
+________________
+
+
+
+
+Código 139
+________________
+
+
+<form action="<%= action %>" method="POST">
+   <p>
+       <label>Nome: <input type="text" name="nome" value="<%= doc.nome %>" /></label>
+   </p>
+   <p>
+       <label>Idade: <input type="number" name="idade" value="<%= doc.idade %>" /></label>
+   </p>
+   <p>
+       <label>UF: <select name="uf">
+               <% const s = "selected" %>
+               <option <% if(doc.uf === "RS") { %><%= s %><% } %>>RS</option>
+               <option <% if(doc.uf === "SC") { %><%= s %><% } %>>SC</option>
+               <option <% if(doc.uf === "PR") { %><%= s %><% } %>>PR</option>
+               <!-- coloque os estados que quiser -->
+           </select></label>
+   </p>
+   <p>
+       <a href="/">Cancelar</a> | <input type="submit" value="Salvar" />
+   </p>
+</form>
+________________
+
+
+
+
+Código 140
+________________
+
+
+function update(id, customer, callback){
+   global.conn.collection("customers").update({_id: new ObjectId(id)}, customer, callback);
+}
+
+module.exports = { findAll, insert, findOne, update }
+________________
+
+
+
+
+Código 141
+________________
+
+
+/* POST edit page. */
+router.post('/edit/:id', function(req, res) {
+ const id = req.params.id
+ const nome = req.body.nome
+ const idade = parseInt(req.body.idade)
+ const uf = req.body.uf
+ global.db.update(id, {nome, idade, uf}, (e, result) => {
+       if(e) { return console.log(e) }
+       res.redirect('/?edit=true')
+   })
+})
+________________
+
+
+
+
+Código 142
+________________
+
+
+<td>
+  <a href="/edit/<%= customer._id %>">Editar</a>
+  <a href="/delete/<%= customer._id %>" onclick="return confirm('Tem certeza?');">Excluir</a>
+</td>
+________________
+
+
+
+
+Código 143
+________________
+
+
+function deleteOne(id, callback){
+   global.conn.collection("customers").deleteOne({_id: new ObjectId(id)}, callback);
+}
+
+module.exports = { findAll, insert, findOne, update, deleteOne }
+________________
+
+
+
+
+Código 144
+________________
+
+
+/* GET delete page. */
+router.get('/delete/:id', function(req, res) {
+ var id = req.params.id
+ global.db.deleteOne(id, (e, r) => {
+       if(e) { return console.log(e) }
+       res.redirect('/?delete=true')
+     })
+})
+________________
+
+
+
+
+Código 145
+________________
+
+
+    <script>
+        if(location.href.indexOf('delete=true') != -1){
+           alert('Cliente excluído com sucesso!');
+       }
+       else if(location.href.indexOf('edit=true') != -1){
+           alert('Cliente editado com sucesso!');
+       }
+       else if(location.href.indexOf('new=true') != -1){
+           alert('Cliente cadastro com sucesso!');
+       }
+    </script>
+________________
+
+
+
+
+Código 146
+________________
+
+
+npm init
+________________
+
+
+
+
+
+
+Código 147
+________________
+
+
+npm i express mongodb body-parser
+________________
+
+
+
+
+Código 148
+________________
+
+
+const mongoClient = require("mongodb").MongoClient
+mongoClient.connect('mongodb://localhost/workshop')
+        .then(conn => global.conn = conn.db("workshop"))
+        .catch(err => console.log(err))
+
+module.export = {}
+________________
+
+
+
+
+Código 149
+________________
+
+
+global.db = require('./db')
+const express = require('express')
+const app = express()
+const bodyParser = require('body-parser')
+const port = 3000 //porta padrão
+________________
+
+
+
+
+Código 150
+________________
+
+
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())
+________________
+
+
+
+
+Código 151
+________________
+
+
+//definindo as rotas
+const router = express.Router()
+router.get('/', (req, res) => res.json({ message: 'Funcionando!' }))
+app.use('/', router)
+________________
+
+
+
+
+Código 152
+________________
+
+
+//inicia o servidor
+app.listen(port)
+console.log('API funcionando!')
+________________
+
+
+
+
+Código 153
+________________
+
+
+node app
+________________
+
+
+
+
+
+
+Código 154
+________________
+
+
+function findCustomers(callback){
+        global.conn.collection('customers').find().toArray(callback)
+}
+
+module.exports = {findCustomers}
+________________
+
+
+
+
+Código 155
+________________
+
+
+// GET /clientes
+router.get('/clientes', (req, res) => global.db.findCustomers((err, docs) => {
+   if(err) res.status(500).json(err)
+   else res.json(docs)
+}))
+________________
+
+
+
+
+Código 156
+________________
+
+
+const ObjectId = require("mongodb").ObjectId
+function findCustomer(id, callback){
+        global.conn.collection('customers').findOne(new ObjectId(id), callback)
+}
+
+module.exports = {findCustomers, findCustomer}
+________________
+
+
+
+
+Código 157
+________________
+
+
+// GET /clientes/{id}
+router.get('/clientes/:id', (req, res) => global.db.findCustomer(req.params.id, (err, doc) => {
+   if(err) res.status(500).json(err)
+   else res.json(doc)
+}))
+________________
+
+
+
+
+Código 158
+________________
+
+
+function insertCustomer(customer, callback){
+        global.conn.collection('customers').insert(customer, callback)
+}
+
+module.exports = {findCustomers, findCustomer, insertCustomer}
+________________
+
+
+
+
+Código 159
+________________
+
+
+// POST /clientes
+router.post('/clientes', (req, res) => {
+   const customer = req.body
+   global.db.insertCustomer(customer, (err, result) => {
+       if(err) res.status(500).json(err)
+       else res.json({ message: 'Cliente cadastrado com sucesso!'})
+   })
+})
+________________
+
+
+
+
+Código 160
+________________
+
+
+curl -X POST -d "{'nome':'Curl', 'idade': 11, 'uf': 'RJ'}" http://localhost:3000/clientes
+________________
+
+
+
+
+Código 161
+________________
+
+
+function updateCustomer(id, customer, callback){
+        global.conn.collection('customers').update({_id: new ObjectId(id)}, customer, callback)
+}
+
+module.exports = {findCustomers, findCustomer, insertCustomer, updateCustomer}
+________________
+
+
+
+
+Código 162
+________________
+
+
+// PUT /clientes/{id}
+router.put('/clientes/:id', (req, res) => {
+   const id = req.params.id
+   const customer = req.body
+   global.db.updateCustomer(id, customer, (err, result) => {
+       if(err) res.status(500).json(err)
+       else res.json({ message: 'Cliente atualizado com sucesso!'})
+   })
+})
+________________
+
+
+
+
+Código 163
+________________
+
+
+curl -X PUT -d "{'nome':'Postman', 'idade': 20, 'uf': 'SP'}" http://localhost:3000/clientes/59ac8350e07d4f10cf6a74f6
+________________
+
+
+
+
+Código 164
+________________
+
+
+function patchCustomer(id, updates, callback){
+        global.conn.collection('customers').update({_id: new ObjectId(id)}, { $set: updates }, callback)
+}
+
+module.exports = {findCustomers, findCustomer, insertCustomer, updateCustomer, patchCustomer}
+________________
+
+
+
+
+Código 165
+________________
+
+
+// PATCH /clientes/{id}
+router.patch('/clientes/:id', (req, res) => {
+   const id = req.params.id
+   const updates = req.body
+   global.db.patchCustomer(id, updates, (err, result) => {
+       if(err) res.status(500).json(err)
+       else res.json({ message: 'Cliente atualizado com sucesso!'})
+   })
+})
+________________
+
+
+
+
+Código 166
+________________
+
+
+curl -X PATCH -d "{'nome':'POSTMAN'}" http://localhost:3000/clientes/59ac8350e07d4f10cf6a74f6
+________________
+
+
+
+
+Código 167
+________________
+
+
+function deleteCustomer(id, callback){
+        global.conn.collection('customers').deleteOne({_id: new ObjectId(id)}, callback)
+}
+
+module.exports = {findCustomers, findCustomer, insertCustomer, updateCustomer, patchCustomer, deleteCustomer}
+________________
+
+
+
+
+Código 168
+________________
+
+
+// DELETE /clientes/{id}
+router.delete('/clientes/:id', (req, res) => {
+   const id = req.params.id
+   global.db.deleteCustomer(id, (err, result) => {
+       if(err) res.status(500).json(err)
+       else res.json({ message: 'Cliente excluído com sucesso!'})
+   })
+})
+________________
+
+
+
+
+Código 169
+________________
+
+
+curl -X DELETE http://localhost:3000/clientes/59ac8350e07d4f10cf6a74f6
+________________
+
+
+
+
+Código 170
+________________
+
+
+function aplicarDescontoTest(){
+  return aplicarDesconto(10,2) === 8
+}
+
+console.log('A aplicação de desconto está funcionando? ')
+console.log(aplicarDescontoTest())
+________________
+
+
+
+
+
+
+Código 171
+________________
+
+
+function aplicarDesconto(valor, desconto){
+  return valor - desconto
+}
+________________
+
+
+
+
+Código 172
+________________
+
+
+function aplicarDescontoGrandeTest(){
+  return aplicarDesconto(1,10) === 0
+}
+
+console.log('A aplicação de desconto grande está funcionando? ') console.log(aplicarDescontoGrandeTest())
+________________
+
+
+
+
+Código 173
+________________
+
+
+function aplicarDesconto(valor, desconto){
+  if(desconto > valor) return 0
+  return valor - desconto
+}
+________________
+
+
+
+
+Código 174
+________________
+
+
+npm init
+________________
+
+
+
+
+Código 175
+________________
+
+
+node index.test
+________________
+
+
+
+
+Código 176
+________________
+
+
+{
+ "name": "exemplotdd",
+ "version": "1.0.0",
+ "description": "",
+ "main": "index.js",
+ "scripts": {
+   "test": "node index.test"
+ },
+ "author": "LuizTools",
+ "license": "ISC"
+}
+________________
+
+
+
+
+Código 177
+________________
+
+
+npm test
+________________
+
+
+
+
+
+
+Código 178
+________________
+
+
+npm install tape
+________________
+
+
+
+
+Código 179
+________________
+
+
+const test = require('tape')
+const index = require('./index')
+________________
+
+
+
+
+Código 180
+________________
+
+
+test('Aplicar desconto', (t) => {
+   t.assert(index.aplicarDesconto(10,5) === 5, "Descontou corretamente")
+   t.end()  
+})
+________________
+
+
+
+
+Código 181
+________________
+
+
+function aplicarDesconto(valor, desconto){
+  if(desconto > valor) return 0
+  return valor - desconto
+}
+
+module.exports = {aplicarDesconto}
+________________
+
+
+
+
+Código 182
+________________
+
+
+"test": "node index.test | tap-spec"
+________________
+
+
+
+
+Código 183
+________________
+
+
+test('Aplicar desconto grande', (t) => {
+   t.assert(index.aplicarDesconto(5,10) === 0, "Descontou corretamente")
+   t.end()
+})
+________________
+
+
+
+
+Código 184
+________________
+
+
+npm install supertest express body-parser
+________________
+
+
+
+
+Código 185
+________________
+
+
+//app.js
+const index = require('./index')
+const express = require('express')
+const app = express()
+const bodyParser = require('body-parser')
+const port = 3000 //porta padrão
+
+//configurando o body parser para interpretar requests mais tarde
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+//definindo as rotas
+const router = express.Router();
+router.get('/', (req, res) => res.json({ message: 'Funcionando!' }));
+
+// GET /aplicarDesconto
+router.get('/aplicarDesconto/:valor/:desconto', (req, res) => {
+   const valor = parseInt(req.params.valor)
+   const desconto = parseInt(req.params.desconto)
+   res.json({valorDescontado: index.aplicarDesconto(valor,desconto)})
+})
+
+app.use('/', router)
+
+if (require.main === module){
+   //inicia o servidor
+   app.listen(port)
+   console.log('API funcionando!')
+}
+
+module.exports = app
+________________
+
+
+
+
+Código 186
+________________
+
+
+const test = require('tape')
+const supertest = require('supertest')
+const app = require('./app')
+________________
+
+
+
+
+Código 187
+________________
+
+
+test('GET /aplicarDesconto/10/5', (t) => {
+   supertest(app)
+     .get('/aplicarDesconto/10/5')
+     .expect('Content-Type', /json/)
+     .expect(200)
+     .end((err, res) =>{
+       t.error(err, 'Sem erros')
+       t.assert(res.body.valorDescontado === 5, "Desconto correto")
+       t.end()  
+     })
+})
+________________
+
+
+
+
+Código 188
+________________
+
+
+"test": "node ./tests/* | tap-spec"
+________________
+
+
+
+
+Código 189
+________________
+
+
+npm install express mongodb dotenv-safe tape tap-spec helmet morgan
+________________
+
+
+
+
+Código 190
+________________
+
+
+const MongoClient = require("mongodb").MongoClient;
+var connection = null;
+var db = null;
+
+function connect(callback){
+   if(connection) return callback(null, db);
+
+   MongoClient.connect(process.env.MONGO_CONNECTION, (err, conn) => {
+       if(err) 
+           return callback(err, null);
+       else {
+           connection = conn;
+           db = conn.db(process.env.DATABASE_NAME);
+           return callback(null, db);
+       }
+   })
+}
+
+function disconnect(){
+   if(!connection) return true;
+   connection.close();
+   connection = null;
+   return true;
+}
+
+module.exports = { connect, disconnect }
+________________
+
+
+
+
+Código 191
+________________
+
+
+#.env, don't commit to repo 
+MONGO_CONNECTION=mongodb://localhost:27017 
+DATABASE_NAME=movie-service 
+PORT=3000
+________________
+Código 192
+________________
+
+
+#.env.example, commit to repo 
+MONGO_CONNECTION= 
+DATABASE_NAME= 
+PORT=
+________________
+
+
+
+
+Código 193
+________________
+
+
+const test = require('tape');
+const mongodb = require('./mongodb');
+
+function runTests(){
+   test('MongoDB Connection', (t) => {
+       mongodb.connect((err, conn) => {
+           t.assert(conn, "Connection established");
+           t.end();
+       });
+   })
+
+   test('MongoDB Disconnection', (t) => {
+       t.assert(mongodb.disconnect(), "Disconnected");
+       t.end();
+   })
+}
+
+module.exports = { runTests }
+________________
+
+
+
+
+Código 194
+________________
+
+
+require("dotenv-safe").load();
+require("./config/mongodb.test").runTests();
+________________
+
+
+
+
+Código 195
+________________
+
+
+{
+ "name": "movie-service",
+ "version": "1.0.0",
+ "description": "Service to provide detailed movies info.",
+ "main": "index.js",
+ "scripts": {
+   "start": "node index",
+   "test": "node index.test | tap-spec"
+ },
+ "author": "",
+ "license": "ISC",
+ "dependencies": {
+   "express": "^4.16.3",
+   "mongodb": "^3.0.7",
+   "tap-spec": "^4.1.1",
+   "tape": "^4.9.0"
+ }
+}
+________________
+
+
+
+
+Código 196
+________________
+
+
+
+
+/movie-service/src> npm test
+________________
+
+
+
+
+
+
+Código 197
+________________
+
+
+
+
+const mongodb = require("../config/mongodb");
+
+function getAllMovies(callback){
+   mongodb.connect((err, db) => {
+       db.collection("movies").find().toArray(callback);
+   })
+}
+
+function getMovieById(id, callback){
+   mongodb.connect((err, db) => {
+       db.collection("movies").findOne({_id: require("mongodb").ObjectId(id)}, callback);
+   });
+}
+
+function getMoviePremiers(callback){
+
+   var monthAgo = new Date();
+   monthAgo.setMonth(monthAgo.getMonth() - 1);
+   monthAgo.setHours(0, 0, 0);
+   monthAgo.setMilliseconds(0);
+
+   mongodb.connect((err, db) => {
+       db.collection("movies").find({ dataLancamento: { $gte: monthAgo } }).toArray(callback);
+   });
+}
+
+function disconnect(){
+   return mongodb.disconnect();
+}
+
+module.exports = { getAllMovies, getMovieById, getMoviePremiers, disconnect }
+________________
+
+
+
+
+Código 198
+________________
+
+
+const test = require('tape');
+const repository = require('./repository');
+
+function runTests(){
+
+   var id = null;
+
+   test('Repository GetAllMovies', (t) => {
+       repository.getAllMovies((err, movies) => {
+           if(movies && movies.length > 0) id = movies[0]._id;
+           
+           t.assert(!err && movies && movies.length > 0, "All Movies Returned");
+           t.end();
+       });
+   })
+   
+   test('Repository GetMovieById', (t) => {
+       if(!id) {
+           t.assert(false, "Movie by Id Returned");
+           t.end();
+           return;
+       }
+
+       repository.getMovieById(id, (err, movie) => {
+           t.assert(!err && movie, "Movie by Id Returned");
+           t.end();
+       });
+   })
+
+   test('Repository GetMoviePremiers', (t) => {
+       repository.getMoviePremiers((err, movies) => {
+           t.assert(!err && movies && movies.length > 0, "Movie Premiers Returned");
+           t.end();
+       });
+   })
+
+   test('Repository Disconnect', (t) => {
+       t.assert(repository.disconnect(), "Disconnect Ok");
+       t.end();
+   })
+}
+
+module.exports = { runTests }
+________________
+
+
+
+
+Código 199
+________________
+
+
+require("dotenv-safe").load();
+require("./config/mongodb.test").runTests();
+require("./repository/repository.test").runTests();
+________________
+
+
+
+
+Código 200
+________________
+
+
+db.movies.insert([{
+  titulo: "Os Vingadores: Guerra Infinita",
+  sinopse: "Os heróis mais poderosos da Marvel enfrentando o Thanos",
+  duracao: 120,
+  dataLancamento: ISODate("2018-05-01T00:00:00Z"),
+  imagem: "http://www.luiztools.com.br/vingadores-gi.jpg",
+  categorias: ["Aventura", "Ação"]
+},
+{
+  titulo: "Os Vingadores: Era de Ultron",
+  sinopse: "Os heróis mais poderosos da Marvel enfrentando o Ultron",
+  duracao: 110,
+  dataLancamento: ISODate("2016-05-01T00:00:00Z"),
+  imagem: "http://www.luiztools.com.br/vingadores-eu.jpg",
+  categorias: ["Aventura", "Ação"]
+},
+{
+  titulo: "Os Vingadores",
+  sinopse: "Os heróis mais poderosos da Marvel enfrentando o Loki",
+  duracao: 100,
+  dataLancamento: ISODate("2014-05-01T00:00:00Z"),
+  imagem: "http://www.luiztools.com.br/vingadores.jpg",
+  categorias: ["Aventura", "Ação"]
+}])
+________________
+
+
+
+
+Código 201
+________________
+
+
+const express = require('express');
+const morgan = require('morgan');
+const helmet = require('helmet');
+var server = null;
+
+function start(api, repository, callback){
+
+   const app = express();
+   app.use(morgan('dev'));
+   app.use(helmet());
+   app.use((err, req, res, next) => {
+     callback(new Error('Something went wrong!, err:' + err), null);
+     res.status(500).send('Something went wrong!');
+   })
+
+   api(app, repository);
+
+   server = app.listen(parseInt(process.env.PORT), () => callback(null, server));
+}
+
+function stop(){
+ if(server) server.close();
+ return true;
+}
+
+module.exports = { start, stop }
+________________
+
+
+
+
+
+
+Código 202
+________________
+
+
+const test = require('tape');
+const server = require('./server');
+
+function apiMock(app, repo){
+   console.log("do nothing");
+}
+
+function runTests(){
+
+   test('Server Start', (t) => {
+       server.start(apiMock, null, (err, srv) => {
+           t.assert(!err && srv, "Server started");
+           t.end();
+       });
+   })
+   
+   test('Server Stop', (t) => {
+       t.assert(server.stop(), "Server stopped");
+       t.end();
+   })
+}
+
+module.exports = { runTests }
+________________
+
+
+
+
+Código 203
+________________
+
+
+require("dotenv-safe").load();
+require("./config/mongodb.test").runTests();
+require("./repository/repository.test").runTests();
+require("./server/server.test").runTests();
+________________
+
+
+
+
+Código 204
+________________
+
+
+module.exports = (app, repository) => {
+
+ app.get('/movies', (req, res, next) => {
+   repository.getAllMovies((err, movies) => {
+     if(err) return next(err);
+     res.json(movies);
+   });
+ })
+
+ app.get('/movies/premieres', (req, res, next) => {
+   repository.getMoviePremiers((err, movies) => {
+     if(err) return next(err);
+     res.json(movies)
+   });
+ })
+
+ app.get('/movies/:id', (req, res, next) => {
+   repository.getMovieById(req.params.id, (err, movie) => {
+     if(err) return next(err);
+     res.json(movie)
+   });
+ })
+}
+________________
+
+
+
+
+Código 205
+________________
+
+
+const test = require('tape');
+const supertest = require('supertest');
+const movies = require('./movies');
+const server = require("../server/server");
+const repository = require("../repository/repository");
+
+function runTests(){
+
+   var app = null;
+   server.start(movies, repository, (err, app) => { 
+       var id = null;
+       test('GET /movies', (t) => {
+           supertest(app)
+               .get('/movies')
+               .expect('Content-Type', /json/)
+               .expect(200)
+               .end((err, res) =>{
+                   if(res.body && res.body.length > 0) id = res.body[0]._id;
+                   t.error(err, 'No errors')
+                   t.assert(res.body && res.body.length > 0, "All Movies returned")
+                   t.end()  
+               })
+       })
+       
+       test('GET /movies/:id', (t) => {
+           if(!id) {
+               t.assert(false, "Movie by Id Returned");
+               t.end();
+               return;
+           }
+
+           supertest(app)
+               .get('/movies/' + id)
+               .expect('Content-Type', /json/)
+               .expect(200)
+               .end((err, res) =>{
+                   t.error(err, 'No errors')
+                   t.assert(res.body, "Movies By Id returned")
+                   t.end()  
+               })
+       })
+
+       test('GET /movies/premieres', (t) => {
+           supertest(app)
+               .get('/movies/premieres')
+               .expect('Content-Type', /json/)
+               .expect(200)
+               .end((err, res) =>{
+                   t.error(err, 'No errors')
+                   t.assert(res.body && res.body.length > 0, "Premiere Movies returned")
+                   t.end()  
+               })
+       })
+
+       server.stop();
+    })
+}
+
+module.exports = { runTests }
+________________
+
+
+
+
+Código 206
+________________
+
+
+require("dotenv-safe").load();
+const movies = require('./api/movies');
+const server = require("./server/server");
+const repository = require("./repository/repository");
+
+server.start(movies, repository, (err, app) => { 
+   console.log("just started");
+});
+________________
+
+
+
+
+Código 207
+________________
+
+
+{
+ "name": "cinema-catalog-service",
+ "version": "1.0.0",
+ "description": "Provide cinema catalog info.",
+ "main": "index.js",
+ "scripts": {
+   "start": "node index",
+   "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "author": "LuizTools",
+ "license": "ISC"
+}
+________________
+
+
+
+
+Código 208
+________________
+
+
+npm install express morgan tape mongodb helmet supertest dotenv-safe
+________________
+
+
+
+
+Código 209
+________________
+
+
+{
+  _id: ObjectId("sasacsa85s7sdc7sd"),
+  cidade: "Porto Alegre",
+  uf: "RS",
+  pais: "BR",
+  cinemas: [
+     {
+        _id: ObjectId("68df5gd5g6ddf"),
+        nome: "Cinemark Bourbon Ipiranga",
+        salas: [
+           {
+              nome: 1,
+              sessoes: [
+                 {
+                    data: ISODate("2018-06-01T09:00:00Z"),
+                    idFilme: ObjectId("9ds68dsvdsvs876v"),
+                    filme: "Vingadores: Guerra Infinita",
+                    valor: 25.00,
+                    assentos: [
+                       { numero: 1, disponivel: true },
+                       { numero: 2, disponivel: false },
+                    ]
+                 },
+                 {
+                    data: ISODate("2018-06-01T11:00:00Z"),
+                    idFilme: ObjectId("9ds68dsvdsvs876v"),
+                    filme: "Vingadores: Guerra Infinita",
+                    valor: 25.00,
+                    assentos: [
+                       { numero: 1, disponivel: true },
+                       { numero: 2, disponivel: true },
+                    ]
+                 }
+              ]
+           }
+        ]
+     }
+  ]
+}
+________________
+
+
+
+
+Código 209
+________________
+
+
+./mongod --dbpath /pasta-do-seu-microservice/data --port 27018
+________________
+
+
+
+
+Código 210
+________________
+
+
+./mongo --port 27018
+________________
+
+
+
+
+
+
+Código 211
+________________
+
+
+use cinema-catalog-service
+________________
+
+
+
+
+Código 212
+________________
+
+
+db.cinemaCatalog.insert([
+{
+   cidade: "Gravataí",
+   uf: "RS",
+   cinemas: []
+},
+{
+   cidade: "Porto Alegre",
+   uf: "RS",
+   pais: "BR",
+   cinemas: [
+      {
+         _id: ObjectId(),
+         nome: "Cinemark Bourbon Ipiranga",
+         salas: [
+            {
+               nome: 1,
+               sessoes: [
+                  {
+                     data: ISODate("2018-06-01T09:00:00Z"),
+                     idFilme: ObjectId("5aefc5029ce83b1eb6b89e57"),
+                     filme: "Vingadores: Guerra Infinita",
+                     valor: 25.00,
+                     assentos: [
+                        { numero: 1, disponivel: true },
+                        { numero: 2, disponivel: false },
+                     ]
+                  },
+                  {
+                     data: ISODate("2018-06-01T11:00:00Z"),
+                     idFilme: ObjectId("5aefc5029ce83b1eb6b89e57"),
+                     filme: "Vingadores: Guerra Infinita",
+                     valor: 25.00,
+                     assentos: [
+                        { numero: 1, disponivel: true },
+                        { numero: 2, disponivel: true },
+                     ]
+                  },
+                  {
+                   data: ISODate("2018-06-01T13:00:00Z"),
+                   idFilme: ObjectId("5aefc5029ce83b1eb6b89e58"),
+                   filme: "Vingadores: Era de Ultron",
+                   valor: 20.00,
+                   assentos: [
+                      { numero: 1, disponivel: true },
+                      { numero: 2, disponivel: false },
+                      { numero: 2, disponivel: true },
+                   ]
+                }
+               ]
+            },
+            {
+               nome: 2,
+               sessoes: [
+                  {
+                     data: ISODate("2018-06-01T09:00:00Z"),
+                     idFilme: ObjectId("5aefc5029ce83b1eb6b89e58"),
+                     filme: "Vingadores: Era de Ultron",
+                     valor: 25.00,
+                     assentos: [
+                        { numero: 1, disponivel: true },
+                        { numero: 2, disponivel: false },
+                     ]
+                  },
+                  {
+                     data: ISODate("2018-06-01T11:00:00Z"),
+                     idFilme: ObjectId("5aefc5029ce83b1eb6b89e58"),
+                     filme: "Vingadores: Era de Ultron",
+                     valor: 25.00,
+                     assentos: [
+                        { numero: 1, disponivel: true },
+                        { numero: 2, disponivel: true },
+                     ]
+                  },
+                  {
+                   data: ISODate("2018-06-01T13:00:00Z"),
+                   idFilme: ObjectId("5aefc5029ce83b1eb6b89e58"),
+                   filme: "Vingadores: Era de Ultron",
+                   valor: 20.00,
+                   assentos: [
+                      { numero: 1, disponivel: true },
+                      { numero: 2, disponivel: false },
+                      { numero: 2, disponivel: true },
+                   ]
+                }
+               ]
+            }
+         ]
+      },
+      {
+       _id: ObjectId(),
+       nome: "GNC Lindóia",
+       salas: [
+          {
+             nome: 100,
+             sessoes: [
+                {
+                   data: ISODate("2018-06-01T09:00:00Z"),
+                   idFilme: ObjectId("5aefc5029ce83b1eb6b89e59"),
+                   filme: "Os Vingadores",
+                   valor: 25.00,
+                   assentos: [
+                      { numero: 1, disponivel: true },
+                      { numero: 2, disponivel: false },
+                   ]
+                },
+                {
+                   data: ISODate("2018-06-01T11:00:00Z"),
+                   idFilme: ObjectId("5aefc5029ce83b1eb6b89e59"),
+                   filme: "Os Vingadores",
+                   valor: 25.00,
+                   assentos: [
+                      { numero: 1, disponivel: true },
+                      { numero: 2, disponivel: true },
+                   ]
+                },
+                {
+                 data: ISODate("2018-06-01T13:00:00Z"),
+                 idFilme: ObjectId("5aefc5029ce83b1eb6b89e58"),
+                 filme: "Vingadores: Era de Ultron",
+                 valor: 20.00,
+                 assentos: [
+                    { numero: 1, disponivel: true },
+                    { numero: 2, disponivel: false },
+                    { numero: 2, disponivel: true },
+                 ]
+              }
+             ]
+          }
+       ]
+    }
+   ]
+}])
+________________
+
+
+
+
+Código 213
+________________
+
+
+#.env, don't commit to repo
+MONGO_CONNECTION=mongodb://localhost:27018
+DATABASE_NAME=cinema-catalog-service
+PORT=3001
+________________
+
+
+
+
+Código 214
+________________
+
+
+//index.test.js
+require("dotenv-safe").load();
+require("./config/mongodb.test").runTests();
+require("./server/server.test").runTests();
+________________
+
+
+
+
+Código 215
+________________
+
+
+{
+ "name": "cinema-catalog-service",
+ "version": "1.0.0",
+ "description": "Provide cinema catalog info.",
+ "main": "index.js",
+ "scripts": {
+   "start": "node index",
+   "test": "node index.test | tap-spec"
+ },
+ "author": "LuizTools",
+ "license": "ISC",
+ "dependencies": {
+   "express": "^4.16.3",
+   "helmet": "^3.12.0",
+   "mongodb": "^3.1.0-beta4",
+   "morgan": "^1.9.0",
+   "supertest": "^3.0.0",
+   "tape": "^4.9.0"
+ }
+}
+________________
+
+
+
+
+Código 216
+________________
+
+
+//repository.js
+const mongodb = require("../config/mongodb");
+const ObjectId = require("mongodb").ObjectId;
+
+function getAllCities(callback){
+   mongodb.connect((err, db) => {
+       db.collection("cinemaCatalog").find({}, {cidade:1,uf:1,pais:1}).toArray(callback);
+   })
+}
+
+function getCinemasByCityId(cityId, callback){
+   var objCityId = ObjectId(cityId);
+   mongodb.connect((err, db) => {
+       db.collection("cinemaCatalog").find({_id: objCityId}, {cinemas: 1}).toArray((err, cities) => {
+           if(err) return callback(err, null);
+           callback(err, cities[0].cinemas);
+       });
+   });
+}
+
+function disconnect(){
+   return mongodb.disconnect();
+}
+
+module.exports = { getAllCities, getCinemasByCityId, disconnect }
+________________
+
+
+
+
+Código 217
+________________
+
+
+const test = require('tape');
+const repository = require('./repository');
+
+function runTests(){
+
+   var cityId = null;
+   var cinemaId = null;
+   var movieId = null;
+
+   test('Repository getAllCities', (t) => {
+       repository.getAllCities((err, cities) => {
+           if(cities && cities.length > 0) cityId = cities[1]._id;//Porto Alegre
+           
+           t.assert(!err && cities && cities.length > 0, "All Cities Returned");
+           t.end();
+       });
+   })
+   
+   test('Repository getCinemasByCityId', (t) => {
+       repository.getCinemasByCityId(cityId, (err, cinemas) => {
+           if(cinemas && cinemas.length > 0) cinemaId = cinemas[0]._id;
+           
+           t.assert(!err && cinemas && cinemas.length > 0, "All Cinemas Returned By City Id");
+           t.end();
+       });
+   })
+
+   test('Repository Disconnect', (t) => {
+       t.assert(repository.disconnect(), "Disconnect Ok");
+       t.end();
+   })
+}
+
+module.exports = { runTests }
+________________
+
+
+
+
+Código 218
+________________
+
+
+//index.test.js
+require("dotenv-safe").load();
+require("./config/mongodb.test").runTests();
+require("./server/server.test").runTests();
+require("./repository/repository.test").runTests();
+________________
+
+
+
+
+Código 219
+________________
+
+
+function getMoviesByCinemaId(cinemaId, callback){
+   var objCinemaId = ObjectId(cinemaId);
+   mongodb.connect((err, db) => {
+       db.collection("cinemaCatalog").aggregate([
+           {$match: {"cinemas._id": objCinemaId}},
+           {$unwind: "$cinemas"},
+           {$unwind: "$cinemas.salas"},
+           {$unwind: "$cinemas.salas.sessoes"},
+           {$group: {_id: { filme: "$cinemas.salas.sessoes.filme", idFilme: "$cinemas.salas.sessoes.idFilme"}}}
+       ]).toArray(callback);
+   });
+}
+________________
+
+
+
+
+Código 220
+________________
+
+
+function getMoviesByCityId(cityId, callback){
+   var objCityId = ObjectId(cityId);
+   mongodb.connect((err, db) => {
+       db.collection("cinemaCatalog").aggregate([
+           {$match: {"_id": objCityId}},
+           {$unwind: "$cinemas"},
+           {$unwind: "$cinemas.salas"},
+           {$unwind: "$cinemas.salas.sessoes"},
+           {$group: {_id: { filme: "$cinemas.salas.sessoes.filme", idFilme: "$cinemas.salas.sessoes.idFilme"}}}
+       ]).toArray((err, sessions) => {
+           if(err) return callback(err, null);
+           callback(err, sessions.map(item => { return {idFilme: item._id.idFilme, filme: item._id.filme } } ));
+       });
+   });
+}
+
+function getMovieSessionsByCityId(movieId, cityId, callback){
+   var objMovieId = ObjectId(movieId);
+   var objCityId = ObjectId(cityId);
+
+   mongodb.connect((err, db) => {
+       db.collection("cinemaCatalog").aggregate([
+           {$match: {"_id": objCityId}},
+           {$unwind: "$cinemas"},
+           {$unwind: "$cinemas.salas"},
+           {$unwind: "$cinemas.salas.sessoes"},
+           {$match: {"cinemas.salas.sessoes.idFilme": objMovieId}},
+           {$group: {_id: { filme: "$cinemas.salas.sessoes.filme", idFilme: "$cinemas.salas.sessoes.idFilme", idCinema: "$cinemas._id", sala: "$cinemas.salas.nome", sessao: "$cinemas.salas.sessoes"}}}
+       ]).toArray((err, sessions) => {
+           if(err) return callback(err, null);
+           callback(err, sessions.map(item => { return {idFilme: item._id.idFilme, filme: item._id.filme, idCinema: item._id.idCinema, sala: item._id.sala, sessao: item._id.sessao } } ));
+       });
+   });
+}
+
+function getMovieSessionsByCinemaId(movieId, cinemaId, callback){
+   var objCinemaId = ObjectId(cinemaId);
+   var objMovieId = ObjectId(movieId);
+   mongodb.connect((err, db) => {
+       db.collection("cinemaCatalog").aggregate([
+           {$match: {"cinemas._id": objCinemaId}},
+           {$unwind: "$cinemas"},
+           {$unwind: "$cinemas.salas"},
+           {$unwind: "$cinemas.salas.sessoes"},
+           {$match: {"cinemas.salas.sessoes.idFilme": objMovieId}},
+           {$group: {_id: { filme: "$cinemas.salas.sessoes.filme", idFilme: "$cinemas.salas.sessoes.idFilme", sala: "$cinemas.salas.nome", sessao: "$cinemas.salas.sessoes"}}}
+       ]).toArray((err, sessions) => {
+           if(err) return callback(err, null);
+           callback(err, sessions.map(item => { return {idFilme: item._id.idFilme, filme: item._id.filme, sala: item._id.sala, sessao: item._id.sessao } } ));
+       });
+   });
+}
+________________
+
+
+
+
+Código 221
+________________
+
+
+module.exports = { getAllCities, getCinemasByCityId, getMoviesByCityId, getMoviesByCinemaId, getMovieSessionsByCityId, getMovieSessionsByCinemaId, disconnect }
+________________
+
+
+
+
+Código 222
+________________
+
+
+test('Repository getMoviesByCinemaId', (t) => {
+       repository.getMoviesByCinemaId(cinemaId, (err, movies) => {
+           t.assert(!err && movies && movies.length > 0, "Movies By Cinema Id Returned");
+           t.end();
+       });
+   })
+
+   test('Repository getMoviesByCityId', (t) => {
+       repository.getMoviesByCityId(cityId, (err, movies) => {
+           if(movies && movies.length > 0) movieId = movies[1].idFilme;//Era de Ultron
+           t.assert(!err && movies && movies.length > 0, "Movies By City Id Returned");
+           t.end();
+       });
+   })
+
+   test('Repository getMovieSessionsByCityId', (t) => {
+       repository.getMovieSessionsByCityId(movieId, cityId, (err, sessions) => {
+           t.assert(!err && sessions && sessions.length > 0, "Movie Sessions By City Id Returned");
+           t.end();
+       });
+   })
+
+   test('Repository getMovieSessionsByCinemaId', (t) => {
+       repository.getMovieSessionsByCinemaId(movieId, cinemaId, (err, sessions) => {
+           t.assert(!err && sessions && sessions.length > 0, "Movie Sessions By Cinema Id Returned");
+           t.end();
+       });
+   })
+________________
+
+
+
+
+Código 223
+________________
+
+
+//cinema-catalog.js
+module.exports = (app, repository) => {
+
+   app.get('/cities', (req, res, next) => {
+     repository.getAllCities((err, cities) => {
+       if(err) return next(err);
+       res.json(cities);
+     });
+   })
+
+   app.get('/cities/:city/movies', (req, res, next) => {
+       repository.getMoviesByCityId(req.params.city, (err, movies) => {
+         if(err) return next(err);
+         res.json(movies)
+       });
+     })
+
+   app.get('/cities/:city/movies/:movie', (req, res, next) => {
+       repository.getMovieSessionsByCityId(req.params.movie, req.params.city, (err, sessions) => {
+           if(err) return next(err);
+           res.json(sessions)
+       });
+   })
+ 
+   app.get('/cities/:city/cinemas', (req, res, next) => {
+     repository.getCinemasByCityId(req.params.city, (err, cinemas) => {
+       if(err) return next(err);
+       res.json(cinemas)
+     });
+   })
+ 
+   app.get('/cinemas/:cinema/movies', (req, res, next) => {
+     repository.getMoviesByCinemaId(req.params.cinema, (err, movies) => {
+       if(err) return next(err);
+       res.json(movies)
+     });
+   })
+
+   app.get('/cinemas/:cinema/movies/:movie', (req, res, next) => {
+       repository.getMovieSessionsByCinemaId(req.params.movie, req.params.cinema, (err, sessions) => {
+           if(err) return next(err);
+           res.json(sessions)
+       });
+   })
+ }
+________________
+
+
+
+
+Código 224
+________________
+
+
+//cinema-catalog.test.js
+const test = require('tape');
+const supertest = require('supertest');
+const movies = require('./cinema-catalog');
+const server = require("../server/server");
+const repository = require("../repository/repository");
+
+function runTests(){
+
+   var app = null;
+   server.start(movies, repository, (err, app) => { 
+       var cityId = null;
+       var movieId = null;
+       var cinemaId = null;
+
+       test('GET /cities', (t) => {
+           supertest(app)
+               .get('/cities')
+               .expect('Content-Type', /json/)
+               .expect(200)
+               .end((err, res) =>{
+                   if(res.body && res.body.length > 0) cityId = res.body[1]._id;
+                   t.error(err, 'No errors')
+                   t.assert(res.body && res.body.length > 0, "All Cities returned")
+                   t.end()  
+               })
+       })
+       
+       test('GET /cities/:city/movies', (t) => {
+           supertest(app)
+               .get('/cities/' + cityId + "/movies")
+               .expect('Content-Type', /json/)
+               .expect(200)
+               .end((err, res) =>{
+                   if(res.body && res.body.length > 0) movieId = res.body[0].idFilme;
+                   t.error(err, 'No errors')
+                   t.assert(res.body, "Movies By City Id returned")
+                   t.end()  
+               })
+       })
+
+       test('GET /cities/:city/movies/:movie', (t) => {
+           supertest(app)
+               .get('/cities/' + cityId + '/movies/' + movieId)
+               .expect('Content-Type', /json/)
+               .expect(200)
+               .end((err, res) =>{
+                   if(res.body && res.body.length > 0) cinemaId = res.body[0].idCinema;
+                   t.error(err, 'No errors')
+                   t.assert(res.body && res.body.length > 0, "Movie Sessions by City Id returned")
+                   t.end()  
+               })
+       })
+
+       test('GET /cities/:city/cinemas', (t) => {
+           supertest(app)
+               .get('/cities/' + cityId + '/cinemas')
+               .expect('Content-Type', /json/)
+               .expect(200)
+               .end((err, res) =>{
+                   t.error(err, 'No errors')
+                   t.assert(res.body, "Cinemas By City Id returned")
+                   t.end()  
+               })
+       })
+
+       test('GET /cinemas/:cinema/movies', (t) => {
+           supertest(app)
+               .get('/cinemas/' + cinemaId + "/movies")
+               .expect('Content-Type', /json/)
+               .expect(200)
+               .end((err, res) =>{
+                   t.error(err, 'No errors')
+                   t.assert(res.body, "Movies By Cinema Id returned")
+                   t.end()  
+               })
+       })
+
+       test('GET /cinemas/:cinema/movies/:movie', (t) => {
+           supertest(app)
+               .get('/cinemas/' + cinemaId + "/movies/" + movieId)
+               .expect('Content-Type', /json/)
+               .expect(200)
+               .end((err, res) =>{
+                   t.error(err, 'No errors')
+                   t.assert(res.body, "Movie Sessions By Cinema Id returned")
+                   t.end()  
+               })
+       })
+
+       repository.disconnect();
+       server.stop();
+    })
+}
+
+module.exports = { runTests }
+________________
+
+
+
+
+Código 225
+________________
+
+
+//index.test.js
+require("dotenv-safe").load();
+require("./config/mongodb.test").runTests();
+require("./server/server.test").runTests();
+require("./repository/repository.test").runTests();
+require("./api/cinema-catalog.test").runTests();
+________________
+
+
+
+
+Código 226
+________________
+
+
+//index.js
+require("dotenv-safe").load();
+const cinemaCatalog = require('./api/cinema-catalog');
+const server = require("./server/server");
+const repository = require("./repository/repository");
+
+server.start(cinemaCatalog, repository, (err, app) => { 
+   console.log("just started");
+});
+________________
+
+
+
+
+Código 227
+________________
+
+
+npm install http express morgan helmet express-http-proxy cookie-parser
+________________
+
+
+
+
+Código 228
+________________
+
+
+//index.js
+var http = require('http');
+const express = require('express')
+const httpProxy = require('express-http-proxy')
+const app = express()
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
+const helmet = require('helmet');
+
+const userServiceProxy = httpProxy('http://localhost:3001');
+const productsServiceProxy = httpProxy('http://localhost:3002');
+
+// Proxy request
+app.get('/users', (req, res, next) => {
+ userServiceProxy(req, res, next);
+})
+
+app.get('/products', (req, res, next) => {
+ productsServiceProxy(req, res, next);
+})
+
+app.use(logger('dev'));
+app.use(helmet());
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+
+var server = http.createServer(app);
+server.listen(3000);
+________________
+
+
+
+
+Código 229
+________________
+
+
+//index.js
+var http = require('http');
+const express = require('express')
+const httpProxy = require('express-http-proxy')
+const app = express()
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
+const helmet = require('helmet');
+
+const userServiceProxy = httpProxy('http://localhost:3001');
+const productsServiceProxy = httpProxy('http://localhost:3002');
+
+// Proxy request
+app.get('/users', (req, res, next) => {
+ userServiceProxy(req, res, next);
+})
+
+app.get('/products', (req, res, next) => {
+ productsServiceProxy(req, res, next);
+})
+
+app.use(logger('dev'));
+app.use(helmet());
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+
+var server = http.createServer(app);
+server.listen(3000);
+________________
+
+
+
+
+Código 230
+________________
+
+
+npm install jsonwebtoken dotenv-safe
+________________
+
+
+
+
+Código 231
+________________
+
+
+# .env.example, commit to repo
+SECRET=
+________________
+
+
+
+
+Código 232
+________________
+
+
+#.env, don't commit to repo
+SECRET=mysecret
+________________
+
+
+
+
+Código 233
+________________
+
+
+require("dotenv-safe").load();
+var jwt = require('jsonwebtoken');
+________________
+
+
+
+
+Código 234
+________________
+
+
+//authentication
+app.post('/login', (req, res, next) => {
+ if(req.body.user === 'luiz' && req.body.pwd === '123'){
+   //auth ok
+   const id = 1; //esse id viria do banco de dados
+   var token = jwt.sign({ id }, process.env.SECRET, {
+     expiresIn: 300 // expires in 5min
+   });
+   res.status(200).send({ auth: true, token: token });
+ }
+ 
+ res.status(500).send('Login inválido!');
+})
+________________
+
+
+
+
+Código 235
+________________
+
+
+app.get('/logout', function(req, res) {
+ res.status(200).send({ auth: false, token: null });
+});
+________________
+
+
+
+
+Código 236
+________________
+
+
+function verifyJWT(req, res, next){
+ var token = req.headers['x-access-token'];
+ if (!token) return res.status(401).send({ auth: false, message: 'No token provided.' });
+ 
+ jwt.verify(token, process.env.SECRET, function(err, decoded) {
+   if (err) return res.status(500).send({ auth: false, message: 'Failed to authenticate token.' });
+   
+   // se tudo estiver ok, salva no request para uso posterior
+   req.userId = decoded.id;
+   next();
+ });
+}
+________________
+
+
+
+
+Código 237
+________________
+
+
+// Proxy request
+app.get('/users', verifyJWT, (req, res, next) => {
+ userServiceProxy(req, res, next);
+})
+
+app.get('/products', verifyJWT, (req, res, next) => {
+ productsServiceProxy(req, res, next);
+})
+________________
+
+
+________________
+Curtiu o livro?
+Por favor, deixe a sua review sincera sobre o livro acessando o link abaixo, isso ajuda muito este humilde autor: https://www.amazon.com.br/review/create-review/ref=cm_cr_dp_d_wr_but_top?ie=UTF8&channel=glance-detail&asin=B075WQSDZ8 
+Aproveita e também me segue nas redes sociais:
+Facebook: http://fb.com/luiztools
+Twitter: http://twitter.com/luiztools 
+LinkedIn: http://linkedin.com/in/luizfduartejr 
+Quer fazer um curso online de Node.js e MongoDB com o autor deste livro? Acesse http://www.luiztools.com.br/curso-nodejs
